@@ -8,8 +8,9 @@ This repository is published automatically from the private `SNodeC/SNode.C-Book
 repository, which is the sole source of truth. Do not edit this copy. Report
 corrections through this repository's issue tracker; accepted fixes are made in
 the book repository and published here after its GCC and Clang checks pass.
-`publication.json` identifies the exact source commit and workflow run. The
-manuscript, proposal, CV, internal reviews and private Git history are not included.
+`publication.json` identifies the source repository and, for CI publications,
+the workflow run. The manuscript, proposal, CV, internal reviews and private Git
+history are not included.
 
 ## Contents
 
@@ -18,7 +19,7 @@ manuscript, proposal, CV, internal reviews and private Git history are not inclu
 - [Exercises and solutions](companion/exercises/README.md) for all 32 chapters
   and Appendix A: review answers, lab commands, expected observations and design
   discussions.
-- [Framework edition](source-baseline/SOURCE-VERSION.md), its content manifest
+- [Framework edition](source-baseline/SOURCE-VERSION.md), its edition tag
   and a checker usable without access to the book repository.
 - CMake support for building the examples and running the 66 exercise tests.
 
