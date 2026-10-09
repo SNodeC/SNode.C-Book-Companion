@@ -21,7 +21,7 @@ history are not included.
 - [Exercises and solutions](companion/exercises/README.md) for all 32 chapters
   and Appendix A: review answers, lab commands, expected observations and design
   discussions.
-- [Framework edition](source-baseline/SOURCE-VERSION.md), its edition tag
+- [Framework edition](EDITION.md), its edition tag
   and a checker usable without access to the book repository.
 - CMake support for building the examples and running the 66 exercise tests.
 

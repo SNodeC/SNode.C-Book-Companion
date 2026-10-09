@@ -26,8 +26,8 @@ selected public headers and libraries.
 
 ## One checkout authority
 
-`book-source-baseline.env` declares the repository, edition tag and project
-version. The companion workflow checks out that tag and verifies the tag and
+`production/edition.env` in the authoring repository declares the repository,
+edition tag and project version; the public companion exports it as `edition.env`. The companion workflow checks out that tag and verifies the tag and
 version before building. The reader checker works without manuscript access.
 The private book CI additionally checks complete printed listings against the
 companion sources. Compilation and runtime tests are separate.
@@ -44,3 +44,7 @@ and [net/mqttsuite/Makefile](https://github.com/SNodeC/OpenWRT/blob/main/net/mqt
 The package repository’s main branch is recreated on every publication. Use these
 URLs for that published surface; the framework edition tag does not identify
 package publications.
+
+The reviewed source includes asynchronous logging and semantic rendering on its
+worker, together with the compiler's `-fno-gnu-unique` policy. Source inspection,
+compilation and runtime results remain distinct evidence.

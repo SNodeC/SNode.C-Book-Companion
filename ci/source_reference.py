@@ -15,7 +15,10 @@ def checkout_tag(framework, tag):
 
 def baseline(root) -> dict[str, str]:
     values: dict[str, str] = {}
-    for line in (root / "source-baseline/book-source-baseline.env").read_text().splitlines():
+    edition = root / "production/edition.env"
+    if not edition.is_file():
+        edition = root / "edition.env"
+    for line in edition.read_text().splitlines():
         line = line.strip()
         if line and not line.startswith("#"):
             key, separator, value = line.partition("=")

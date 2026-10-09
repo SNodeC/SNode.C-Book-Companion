@@ -8,4 +8,5 @@ if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
 endif()
 
 add_subdirectory(examples)
+# Register the companion exercise tests with CTest.
 add_subdirectory(exercises)

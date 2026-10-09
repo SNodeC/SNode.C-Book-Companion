@@ -4,7 +4,7 @@ This directory contains complete source trees that accompany the manuscript.
 
 ## Edition and new teaching examples
 
-Use the exact 2.0.0 source snapshot in [the edition record](../../source-baseline/SOURCE-VERSION.md).
+Use the exact 2.0.0 source snapshot in [the edition record](https://github.com/SNodeC/SNode.C-Book-Companion/blob/main/EDITION.md).
 
 `EchoPair` supplies the complete Chapter 3 files. `SemanticLogging` supplies the
 complete Chapter 14 public-API example. The selected book smoke tests check both
