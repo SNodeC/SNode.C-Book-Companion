@@ -63,9 +63,6 @@ namespace minigateway {
 
             sendSubscribe(std::list<iot::mqtt::Topic>{
                 iot::mqtt::Topic(measurementInputTopic, qoS)});
-        } else {
-            connected = false;
-            sendDisconnect();
         }
     }
 

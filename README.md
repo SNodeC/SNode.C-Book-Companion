@@ -4,6 +4,8 @@ Examples, exercises, solutions and edition verification for *Layered Network
 Programming with SNode.C: Building Multi-Protocol Applications in Modern C++*
 by Volker Christian.
 
+The code, examples and exercise solutions in this repository are licensed under the MIT License (see LICENSE). The book text is not part of this repository.
+
 This repository is published automatically from the private `SNodeC/SNode.C-Book`
 repository, which is the sole source of truth. Do not edit this copy. Report
 corrections through this repository's issue tracker; accepted fixes are made in
