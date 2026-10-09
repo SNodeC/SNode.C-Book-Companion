@@ -1,0 +1,3 @@
+# Follow-up 16: printed listings use the measured 90-column frame.
+BasedOnStyle: InheritParentConfig
+ColumnLimit: 90
