@@ -66,7 +66,7 @@ or protocol repair. It does not exercise a supervisor's restart throttling.
 Service-account permissions, log rotation, protected certificates and database
 resources need their own deployment checks. The chapter's OpenWrt path is an
 **advanced lab** requiring a matching SDK, a recipe modelled on the published
-recipes in [the OpenWrt recipe repository](https://github.com/SNodeC/OpenWRT/tree/main/net),
+recipes in [SNode.C](https://github.com/SNodeC/snode.c/blob/master/supplement/openwrt/Makefile) and [MQTTSuite](https://github.com/SNodeC/mqttsuite/blob/master/misc/openwrt/Makefile),
 and a disposable target. The book examples and labs are not prepared for
 cross-compilation; writing the echo-consumer recipe is part of this advanced lab. The local installation/recovery lab is an alternative observation, not
 evidence that the target package or `procd` service works.

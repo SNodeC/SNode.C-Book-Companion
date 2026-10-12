@@ -15,18 +15,16 @@ with deterministic observations; inspect the specific CI run for actual results.
 The compact examples are standalone SNode.C consumer projects for the short code
 fragments in the protocol and persistence chapters:
 
-```text
-companion/examples/HttpUpgrade-Server
-companion/examples/HttpUpgrade-Client
-companion/examples/SSE-Server
-companion/examples/SSE-EventSource-Client
-companion/examples/WebSocket-Echo-ServerSubprotocol
-companion/examples/WebSocket-Echo-ClientSubprotocol
-companion/examples/LineProtocol-Server
-companion/examples/LineProtocol-Client
-companion/examples/MQTT-ClientRole
-companion/examples/MariaDB-Minimal
-```
+- [HttpUpgrade-Server](HttpUpgrade-Server/README.md) — Compact server-side HTTP upgrade example used by Chapter 17.
+- [HttpUpgrade-Client](HttpUpgrade-Client/README.md) — Compact client-side HTTP upgrade example used by Chapter 17.
+- [SSE-Server](SSE-Server/README.md) — Compact server-side Server-Sent Events example used by Chapter 19.
+- [SSE-EventSource-Client](SSE-EventSource-Client/README.md) — Compact EventSource client example used by Chapter 19.
+- [WebSocket-Echo-ServerSubprotocol](WebSocket-Echo-ServerSubprotocol/README.md) — Compact WebSocket server subprotocol module used by Chapter 20.
+- [WebSocket-Echo-ClientSubprotocol](WebSocket-Echo-ClientSubprotocol/README.md) — Compact WebSocket client subprotocol module used by Chapter 20.
+- [LineProtocol-Server](LineProtocol-Server/README.md) — This compact example is the runnable server counterpart to the line-command `SocketContext` introduced in Chapter 10.
+- [LineProtocol-Client](LineProtocol-Client/README.md) — This compact example is the runnable client counterpart to the line-command `SocketContext` introduced in Chapter 10.
+- [MQTT-ClientRole](MQTT-ClientRole/README.md) — Compact MQTT client role example used by Chapter 21.
+- [MariaDB-Minimal](MariaDB-Minimal/README.md) — Compact MariaDB client example used by Chapter 24.
 
 Each compact example has its own `CMakeLists.txt` and can be configured against
 an installed SNode.C package:
@@ -67,12 +65,16 @@ outside that compact example.
 
 The final project chapters use two larger source trees:
 
-```text
-companion/examples/MiniGateway
-companion/examples/MiniGateway-Extended
-```
+- [MiniGateway](MiniGateway/README.md) — Guided-project application used by Chapter 30.
+- [MiniGateway-Extended](MiniGateway-Extended/README.md) — Extended guided-project application used by Chapter 31.
 
 These are the source-of-truth examples for Chapters 30 and 31. They are included
 in the aggregate build as `minigateway` and `minigateway-extended`; their
 individual deployment targets are `deploy-minigateway` and
 `deploy-minigateway-extended`.
+
+## Additional example source trees
+
+- [Comparison-AsioEcho](Comparison-AsioEcho/README.md) — Chapter 1 compares this asynchronous TCP server with EchoPair. Install standalone Asio headers (`libasio-dev` on Debian/Ubuntu), then build without SNode.C:
+- [EchoPair](EchoPair/README.md) — Complete Chapter 3 teaching example for the pinned SNode.C 2.0.0 source snapshot. Unlike the framework's separate `examples/echo`, this version keeps the direct host/port setup printed in the chapter. Both are installed consumers.
+- [SemanticLogging](SemanticLogging/README.md) — Complete logging-only Chapter 14 example. It uses `<Log.h>` and the public `snode::log::configure(Settings)` startup path, without starting SNode.C's runtime.

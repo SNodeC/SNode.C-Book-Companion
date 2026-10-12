@@ -34,13 +34,12 @@ companion sources. Compilation and runtime tests are separate.
 
 Historical review records retain their original observations; a later tag update
 does not renew earlier test results. MQTTSuite uses `SNodeC/mqttsuite` tag
-`Book-1.0` as a separate source-reading reference; the external anchor checker
-verifies its tag, named paths and symbols.
+`Book-1.0` as a separate source-reading reference.
 
 The [published repository](https://github.com/SNodeC/Packages/blob/main/README.md)
 contains signed packages and documentation. OpenWrt recipes are maintained separately,
-under [net/snode.c/Makefile](https://github.com/SNodeC/OpenWRT/blob/main/net/snode.c/Makefile)
-and [net/mqttsuite/Makefile](https://github.com/SNodeC/OpenWRT/blob/main/net/mqttsuite/Makefile).
+under [supplement/openwrt/Makefile](https://github.com/SNodeC/snode.c/blob/master/supplement/openwrt/Makefile)
+and [misc/openwrt/Makefile](https://github.com/SNodeC/mqttsuite/blob/master/misc/openwrt/Makefile).
 The package repository’s main branch is recreated on every publication. Use these
 URLs for that published surface; the framework edition tag does not identify
 package publications.
