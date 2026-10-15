@@ -1,3 +1,7 @@
+<!-- snodec:begin organization -->
+<p><a href="https://github.com/SNodeC#banner" title="SNode.C organization"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/media/nav/organization-dark.svg"><img align="right" src="docs/media/nav/organization-light.svg" alt="SNode.C organization" title="SNode.C organization" width="160" height="28"></picture></a><br clear="all"></p>
+<!-- snodec:end organization -->
+
 # SNode.C Book Companion
 
 Examples, exercises, solutions and edition verification for *Layered Network
@@ -13,6 +17,8 @@ the book repository and published here after its GCC and Clang checks pass.
 `publication.json` identifies the source repository and, for CI publications,
 the workflow run. The manuscript, proposal, CV, internal reviews and private Git
 history are not included.
+
+This repository receives the tested reader export from the Book companion publication workflow. Framework-edition verification does not publish here. See the organization [workflow graph](https://github.com/SNodeC/.github/blob/main/docs/workflow-graph.md#banner) for source ownership and publication guards.
 
 ## Contents
 
@@ -42,7 +48,7 @@ python3 ci/source_reference.py --framework ../snodec-book-edition
 ```
 
 Install the verified framework using its build instructions, or use the
-[development packages](https://github.com/SNodeC/Packages). The installed package
+[development packages](https://github.com/SNodeC/Packages#banner). The installed package
 and checked-out source must correspond to the edition being studied. MQTTSuite
 source-reading exercises use `SNodeC/mqttsuite` at `Book-1.0`.
 
